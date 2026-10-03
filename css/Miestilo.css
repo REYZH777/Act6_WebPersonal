@@ -1,0 +1,316 @@
+@font-face{
+  font-family: 'MonseDescargada';
+  src:url('../fonts/Monserrat-Regular.ttf');
+
+}
+/* variables*/
+:root{
+  --color_principal: #004b87;
+  --color_barra:green;
+  --color_secundario: #00a859;
+  --color_oscuro: #2b2b2b;
+  --color_claro: #ffffff;
+  --color_fondo: #f4f7f6;
+  --color_borde: #e0e0e0;
+  --color_fondoTarjeta: #FC8B74;
+  --color_Tarjeta: #AD0707;
+
+
+
+/* Tipo grafia en linea para titulos */
+--fuente_titulos: 'Open sans', sans-serif;
+/* Tipografia descargada (local) para el cuerpo de texto */
+--fuente_cuerpo: 'MonseDescargada', Arial, sans-serif;
+
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+  color:var(--color_oscuro);
+  line-height: 1.6;
+  font-family:var(--fente_cuerpo)";
+  
+}
+
+h1,h2,h3 {
+font-family:var(--fuente_titulos);
+font-weight: 700;
+letter-spacing: -0.5px;
+margin-bottom: 15px;
+}
+ul{
+  list-style: none;
+  text-align: center;
+
+}
+a{
+  text-decoration: none;
+  color:var(--fuente_titulos);
+}
+
+header{
+background-color:var(--color_claro);
+padding: 15px 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 px 5px rgba(0, 0, 0, 0.05);
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+#logo h1{
+  color:var(--color_Tarjeta);
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.menu ul {
+  display: flex;
+  gap:20px;
+  align-items: center;
+}
+
+.menu a{
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.menu a:hover{
+  color:var(--color_Tarjeta)
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 0px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.hero_contenido,
+ .hero_imagen {
+  flex: 1 1 300px;
+ 
+   /* crecer encoger tamBase*/
+}
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero_contenido h2 {
+  font-size: 2.4rem;
+  color:var(--color_Tarjeta);
+  line-height: 1.2;
+}
+
+.hero_contenido p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+main{
+  max-width: 1200px;
+  margin:0px;
+  padding: 20px;
+}
+#logo h1 {
+font-family:var(--fuente_titulos);;
+}
+
+
+/*GRID DE CURSOS */
+
+.catalogo{
+  padding: 40px 0;
+  background-color: var(--color_Tarjeta);
+
+}
+#catalogo h2{
+  text-align: center;
+  color:var(--color_Tarjeta)
+}
+.grid_cursos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+
+/* footeer*/
+.footer{
+  background-color: var(--color_oscuro);
+  color: var(--color_claro);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #f5f5f5;
+    line-height: 1.6;
+}
+
+
+
+
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: white;
+    color: #222;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.generaciones {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.10);
+}
+
+
+.card-imagen {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.artist1 {
+    background-image: url("../images/artist4.webp");
+}
+
+.artist2 {
+    background-image: url("../images/artist2.webp");
+}
+
+.artist3 {
+    background-image: url("../images/artist3.webp");
+}
+
+.artist4 {
+    background-image: url("../images/artist1.webp");
+}
+
+.juego1 {
+    background-image: url("../images/juego1.webp");
+}
+
+.juego2 {
+    background-image: url("../images/juego2.webp");
+}
+
+.juego3 {
+    background-image: url("../images/juego3.webp");
+}
+
+.juego4 {
+    background-image: url("../images/juego4.webp");
+}
+
+
+
+.card-contenido {
+    padding: 30px;
+}
+
+
+.card-contenido span {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.card h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+
+.card-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tabla-juegos {
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+
+.tabla-juegos th {
+  background:var(--color_Tarjeta);
+  color: white;
+}
+
+.tabla-juegos th,
+.tabla-juegos td {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--color_Tarjeta);
+  text-align: center;
+}
